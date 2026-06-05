@@ -1,0 +1,164 @@
+/* General Styles */
+.sentiment-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100%;
+  }
+  
+  /* Navbar Styles */
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .Nav-menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+  }
+  
+  .Nav-menu a:hover {
+    color: #6F4E37;
+    text-decoration: underline;
+  }
+  
+  .Navbar-right {
+    display: flex;
+  }
+  
+  .Navbar-right button {
+    padding: 10px 20px;
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .Navbar-right button:hover {
+    background-color: #5a4028;
+  }
+  
+  /* Sentiment Form Styles */
+  .sentiment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 70vh;
+  }
+  
+  .sentiment-container > * {
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Layout */
+  .s{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add gap between form elements */
+    width: 100%;
+  }
+  
+  .s div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .s label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .s input, .s select, .s textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Adds space between inputs */
+  }
+  
+  .s input:focus, .s select:focus, .s textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  .s button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .s button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .s button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+  
+  .s textarea {
+    resize: vertical;
+  }
+  
+  /* Loading and Error Message */
+  .loading, .error {
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .sentiment-result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  

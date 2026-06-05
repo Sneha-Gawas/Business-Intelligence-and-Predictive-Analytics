@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendation</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Center the content */
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #444;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form Labels */
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        /* Input Fields */
+        form input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Input Focus */
+        form input[type="number"]:focus {
+            border-color: #007BFF;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        /* Button Styling */
+        form button {
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            form {
+                padding: 15px;
+            }
+
+            form button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Recommendations (Filtered):</h2>
+
+    <form action="/recommend" method="POST">
+        <label for="user_id">UserID:</label>
+        <input type="number" id="user_id" name="user_id" required>
+    
+        <label for="n">Number of Recommendations (N):</label>
+        <input type="number" id="n" name="n" required>
+    
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>

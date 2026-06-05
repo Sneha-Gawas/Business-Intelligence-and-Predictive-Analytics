@@ -1,0 +1,18 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .reccomend,
+  .download {
+     /* Makes both buttons equal width */
+      align-items: center;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 10px;
+      flex: 1; /* Input spans the remaining width */
+    
+  }

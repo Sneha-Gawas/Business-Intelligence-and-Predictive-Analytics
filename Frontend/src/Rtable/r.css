@@ -1,0 +1,161 @@
+/* General styling for the transactions container */
+.Reviews {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+   /* Increased width to accommodate forms in a single row */
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.Reviews h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Search and Delete sections side by side */
+.search-delete-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between search and delete sections */
+  margin-bottom: 20px;
+}
+
+.search, .delete {
+  flex: 1; /* Equal width for both sections */
+  display: flex;
+  align-items: center;
+}
+
+.search input, .delete input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  flex: 1; /* Input spans the remaining width */
+}
+
+.search button, .delete button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  max-width: 250px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search button:hover, .delete button:hover {
+ 
+  background-color: #0056b3;
+}
+
+/* Add and Update forms in single rows */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between Add and Update forms */
+  margin-bottom: 20px;
+}
+
+.AddForm, .updateform {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between inputs and buttons */
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.AddForm {
+  background-color: #e6f7ff;
+  border-color: #b3e0ff;
+}
+
+.updateform {
+  background-color: #fff2e6;
+  border-color: #ffd9b3;
+}
+
+.AddForm h3, .updateform h3 {
+  flex: 0 0 150px; /* Fixed width for headings */
+  color: #0056b3;
+  margin: 0;
+}
+
+.updateform h3 {
+  color: #cc5200;
+}
+
+.AddForm input, .updateform input {
+  /* Inputs span the remaining width */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.AddForm textarea, .updateform textarea {
+  /* Ensure the textareas span the remaining width with some padding */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Ensures the textarea uses the full available width */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.AddForm button, .updateform button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.AddForm button:hover {
+  background-color: #0056b3;
+}
+
+.updateform button {
+  background-color: #ff8000;
+}
+
+.updateform button:hover {
+  background-color: #cc5200;
+}
+
+/* Transaction Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #927c3b;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #d9edf7;
+}

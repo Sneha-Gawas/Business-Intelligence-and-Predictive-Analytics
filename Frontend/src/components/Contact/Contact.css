@@ -1,0 +1,23 @@
+.contact_us{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-form input,label,button{
+    width: 100%;
+    margin: 4px;
+}
+.contact-form input{
+    padding:3px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+}
+.deatil{
+    margin: 7px;
+}
+.contact-form button{
+    margin: 10px;
+}
+h1{
+    margin-left: 13%;
+}

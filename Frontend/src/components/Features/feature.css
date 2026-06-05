@@ -1,0 +1,33 @@
+.features{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.feature{
+    width: 20%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0px 2px 3px 3px #b3b3b3;
+    background-color: white;
+}
+.feature .f_img img{
+    width: 80%;
+    height: 10vw;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-bottom: 2px;
+    box-shadow: 0px 3px 3px 2px #b3b3b3;
+    border-radius: 10px;
+}
+
+.feature .f_desc h4,p{
+   margin: 10px;
+   text-align: justify;
+   margin-bottom: 4px;
+}

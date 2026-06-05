@@ -1,0 +1,50 @@
+.header{
+    height: 36vw;
+    margin: auto;
+    width: 80%;
+    background: url('../../assets/bcafe.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 3%;
+}
+.header-componets{
+    position:absolute;
+    bottom: 10%;
+    left: 6vw;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.2rem;
+    animation: fadeIn 3s ease-in 0.2s normal;;
+}
+
+.header .header-componets h4{
+    color:white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.header .header-componets p{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.header .header-componets button{
+    background-color: white;
+    color: #6F4E37;
+    padding: 10px;
+    border-radius: 15%;
+    font-weight: 900;
+    border: none;
+    width: 20%;
+}
+
